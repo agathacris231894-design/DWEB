@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Software</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Comentário rápido Ctrl + : -->
+    <!-- Responsividade, o site vai se adaptar a diferentes dispositivos -->
+    <meta name="author" content="Ágatha Cristina Marinho da Costa">
+    <meta name="description" content="pesquisa da disciplina dweb">
+    <meta name="keywords" content="arquitetura, Software, desenvolvimento web"">
+    </head>
+
+    <body>
+
+        <header class=" header-1">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="index.html" class="nav-logo active">Arquitetura de Software</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="introducao.html" class="nav-link">Introdução</a>
+                </li>
+                <li class="nav-item">
+                    <a href="objetivos.html" class="nav-link">Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fundamentos.html" class="nav-link">Fundamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="acoplamento.html" class="nav-link">Acoplamento e Coesão</a>
+                </li>
+                <li class="nav-item">
+                    <a href="requisitos.html" class="nav-link">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="estilos.html" class="nav-link">Estilos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="padroes.html" class="nav-link">Padrões</a>
+                </li>
+                <li class="nav-item">
+                    <a href="escolha.html" class="nav-link">Escolha</a>
+                </li>
+                <li class="nav-item">
+                    <a href="arquitetura.html" class="nav-link">Arquitetura Moderna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="referencias.html" class="nav-link">Referências</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="Escolha" id="escolha">
+            <div class="Escolha">
+
+                <h1>Escolha da Arquitetura e Trade-offs</h1>
+
+                <p>
+                    Não existe uma arquitetura universalmente melhor.
+                </p>
+
+                <p>
+                    A arquitetura deve ser escolhida considerando:
+                </p>
+
+                <ul>
+                    <li>Problema;</li>
+                    <li>Requisitos;</li>
+                    <li>Restrições;</li>
+                    <li>Equipe;</li>
+                    <li>Orçamento;</li>
+                    <li>Escala;</li>
+                    <li>Segurança;</li>
+                    <li>Desempenho;</li>
+                    <li>Disponibilidade;</li>
+                    <li>Necessidade de evolução.</li>
+                </ul>
+
+                <h2>Antes de escolher, devemos perguntar:</h2>
+
+                <ol>
+                    <li>Qual problema o sistema resolve?</li>
+                    <li>Quem utilizará?</li>
+                    <li>Quantos usuários são esperados?</li>
+                    <li>Qual volume de dados?</li>
+                    <li>O sistema precisa crescer?</li>
+                    <li>Existem restrições de orçamento?</li>
+                    <li>Quais requisitos existem?</li>
+                    <li>Quais atributos de qualidade são prioritários?</li>
+                </ol>
+
+                <h2>Trade-offs</h2>
+
+                <p>
+                    Toda decisão arquitetural possui vantagens e desvantagens.
+                </p>
+
+                <p><strong>Por exemplo: Microsserviços</strong></p>
+
+                <ul>
+                    <li>Escalabilidade;</li>
+                    <li>Independência;</li>
+                    <li>Deploy independente.</li>
+                </ul>
+
+                <p><strong>Porém:</strong></p>
+
+                <ul>
+                    <li>Mais complexidade;</li>
+                    <li>Mais custos;</li>
+                    <li>Comunicação distribuída;</li>
+                    <li>Maior necessidade de observabilidade.</li>
+                </ul>
+
+                <p>
+                    Portanto, toda decisão arquitetural envolve trade-offs.
+                </p>
+
+                <h2>Matriz de decisão</h2>
+
+                <p>
+                    Podemos comparar arquiteturas usando critérios com pesos.
+                </p>
+
+                <p>Exemplo:</p>
+
+                <table border="1">
+                    <tr>
+                        <th>Critério</th>
+                        <th>Peso</th>
+                        <th>Monólito</th>
+                        <th>Microsserviços</th>
+                    </tr>
+
+                    <tr>
+                        <td>Simplicidade</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Escalabilidade</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Custo</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Complexidade operacional</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+
+                <p>
+                    A pontuação pode ser calculada por:
+                    <br>
+                    <strong>Peso × Nota</strong>
+                </p>
+
+                <h2>Arquitetura evolutiva</h2>
+
+                <p>
+                    A arquitetura pode mudar conforme o sistema cresce:
+                    <br>
+                    Monólito → Monólito Modular → Serviços independentes
+                </p>
+
+                <p>
+                    Isso evita adicionar complexidade antes de ela ser necessária.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">&copy; 2026 - Site de estudos de Ágatha Cristina Marinho da Costa. Todos os direitos
+            reservados. <br><br>
+            Entre em contato comigo no github:<br><br>
+        </p>
+        <a href="https://github.com/agathacris231894-design" id="git">
+            <img src="C:\Users\fabio\Downloads\site_atividade_3\img\github.png" width="100" height="100">
+        </a>
+    </footer>
+
+    </body>
+
+</html>

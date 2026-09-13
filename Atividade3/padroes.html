@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Software</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Comentário rápido Ctrl + : -->
+    <!-- Responsividade, o site vai se adaptar a diferentes dispositivos -->
+    <meta name="author" content="Ágatha Cristina Marinho da Costa">
+    <meta name="description" content="pesquisa da disciplina dweb">
+    <meta name="keywords" content="arquitetura, Software, desenvolvimento web"">
+    </head>
+
+    <body>
+
+        <header class=" header-1">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="index.html" class="nav-logo active">Arquitetura de Software</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="introducao.html" class="nav-link">Introdução</a>
+                </li>
+                <li class="nav-item">
+                    <a href="objetivos.html" class="nav-link">Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fundamentos.html" class="nav-link">Fundamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="acoplamento.html" class="nav-link">Acoplamento e Coesão</a>
+                </li>
+                <li class="nav-item">
+                    <a href="requisitos.html" class="nav-link">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="estilos.html" class="nav-link">Estilos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="padroes.html" class="nav-link">Padrões</a>
+                </li>
+                <li class="nav-item">
+                    <a href="escolha.html" class="nav-link">Escolha</a>
+                </li>
+                <li class="nav-item">
+                    <a href="arquitetura.html" class="nav-link">Arquitetura Moderna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="referencias.html" class="nav-link">Referências</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="Padroes" id="padroes">
+            <div class="Padroes">
+
+                <h1>Padrões Arquiteturais e Design Patterns</h1>
+
+                <h2>Padrões arquiteturais</h2>
+                <p>
+                    São soluções recorrentes para problemas de estrutura e comunicação
+                    entre componentes.
+                </p>
+
+                <h2>API Gateway</h2>
+                <p>
+                    Funciona como uma porta de entrada para diferentes serviços.
+                </p>
+
+                <p>Pode realizar:</p>
+                <ul>
+                    <li>Roteamento;</li>
+                    <li>Autenticação;</li>
+                    <li>Rate limiting;</li>
+                    <li>Agregação;</li>
+                    <li>Logging;</li>
+                    <li>Controle de acesso.</li>
+                </ul>
+
+                <h2>Circuit Breaker</h2>
+                <p>
+                    Evita que uma falha em um serviço seja propagada para outros.
+                </p>
+
+                <p>
+                    Possui três estados:
+                    <br>
+                    Closed → Open → Half-Open
+                </p>
+
+                <h2>Retry</h2>
+                <p>
+                    Realiza uma nova tentativa quando uma operação falha.
+                </p>
+
+                <p>Deve utilizar estratégias como:</p>
+                <ul>
+                    <li>Limite de tentativas;</li>
+                    <li>Backoff;</li>
+                    <li>Jitter.</li>
+                </ul>
+
+                <h2>Bulkhead</h2>
+                <p>
+                    Isola recursos para impedir que uma falha consuma todos
+                    os recursos do sistema.
+                </p>
+
+                <h2>Saga</h2>
+                <p>
+                    Coordena operações distribuídas.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    Criar pedido → Reservar estoque → Pagar → Confirmar pedido
+                </p>
+
+                <p>
+                    Se uma etapa falhar, podem ser executadas ações compensatórias.
+                </p>
+
+                <h2>CQRS</h2>
+                <p>
+                    Command Query Responsibility Segregation.
+                </p>
+
+                <p>Separa:</p>
+                <ul>
+                    <li><strong>Commands:</strong> modificam dados;</li>
+                    <li><strong>Queries:</strong> consultam dados.</li>
+                </ul>
+
+                <h2>Event Sourcing</h2>
+                <p>
+                    Armazena as alterações como uma sequência de eventos.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    Conta criada → Depósito 500 → Saque 100 → Depósito 200
+                </p>
+
+                <p>
+                    O estado atual pode ser reconstruído a partir desses eventos.
+                </p>
+
+                <h2>Design Patterns</h2>
+                <p>
+                    São soluções reutilizáveis para problemas recorrentes de design interno.
+                </p>
+
+                <p>Exemplos:</p>
+                <ul>
+                    <li>Factory;</li>
+                    <li>Strategy;</li>
+                    <li>Observer;</li>
+                    <li>Adapter;</li>
+                    <li>Repository;</li>
+                    <li>Decorator.</li>
+                </ul>
+
+                <h2>Diferença para padrões arquiteturais</h2>
+                <ul>
+                    <li><strong>Arquitetura:</strong> estrutura geral do sistema.</li>
+                    <li><strong>Design Pattern:</strong> solução para problemas internos de design.</li>
+                </ul>
+
+                <h2>SOLID</h2>
+
+                <p>
+                    <strong>S — Single Responsibility:</strong>
+                    Uma classe deve ter uma responsabilidade principal.
+                </p>
+
+                <p>
+                    <strong>O — Open/Closed:</strong>
+                    Aberto para extensão, fechado para modificação.
+                </p>
+
+                <p>
+                    <strong>L — Liskov Substitution:</strong>
+                    Subtipos devem poder substituir seus tipos base sem quebrar
+                    o comportamento esperado.
+                </p>
+
+                <p>
+                    <strong>I — Interface Segregation:</strong>
+                    É melhor ter interfaces específicas do que interfaces gigantes.
+                </p>
+
+                <p>
+                    <strong>D — Dependency Inversion:</strong>
+                    Módulos de alto nível devem depender de abstrações,
+                    não diretamente de implementações.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="footer-title">&copy; 2026 - Site de estudos de Ágatha Cristina Marinho da Costa. Todos os direitos
+            reservados. <br><br>
+            Entre em contato comigo no github:<br><br>
+        </p>
+        <a href="https://github.com/agathacris231894-design" id="git">
+            <img src="C:\Users\fabio\Downloads\site_atividade_3\img\github.png" width="100" height="100">
+        </a>
+    </footer>
+
+    </body>
+
+</html>

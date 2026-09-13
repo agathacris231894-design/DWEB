@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* =========================
+ESTILOS DO CORPO
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+ESTILOS DO CORPO
+========================= */
+
+body {
+  background-color: #1e7a4ccd;
+  color: #ffffff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* =========================
+   CORPO
+========================= */
+
+body {
+    background-color: #1e7a4ccd;
+    color: #ffffff;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    display: block;
+    align-items: center;
+}
+
+
+/* =========================
+   CABEÇALHO FIXO
+========================= */
+
+.header-1 {
+    background-color: #100a27;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 1px solid #100a27;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.nav-logo {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #1e7a4ccd;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+/* =========================
+   MENU FIXO
+========================= */
+
+.nav-menu {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 5px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 35px;
+    background-color: #1e7a4ccd;
+    border-radius: 100px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.nav-logo:hover {
+    color: #ffffff;
+    background-color: #1e7a4c68;
+    transform: translateY(-2px);
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+  background-color: #100a27;
+  color: white;
+  display: grid;
+}
+
+#footer-title {
+  color: #1e7a4ccd;
+  text-align: center;   
+  margin: 20px;
+}
+
+/* =========================
+LINK COM IMAGEM
+========================= */
+
+footer img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}

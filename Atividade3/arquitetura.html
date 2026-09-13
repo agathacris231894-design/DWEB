@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Software</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Comentário rápido Ctrl + : -->
+    <!-- Responsividade, o site vai se adaptar a diferentes dispositivos -->
+    <meta name="author" content="Ágatha Cristina Marinho da Costa">
+    <meta name="description" content="pesquisa da disciplina dweb">
+    <meta name="keywords" content="arquitetura, Software, desenvolvimento web"">
+    </head>
+
+    <body>
+
+        <header class=" header-1">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="index.html" class="nav-logo active">Arquitetura de Software</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="introducao.html" class="nav-link">Introdução</a>
+                </li>
+                <li class="nav-item">
+                    <a href="objetivos.html" class="nav-link">Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fundamentos.html" class="nav-link">Fundamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="acoplamento.html" class="nav-link">Acoplamento e Coesão</a>
+                </li>
+                <li class="nav-item">
+                    <a href="requisitos.html" class="nav-link">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="estilos.html" class="nav-link">Estilos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="padroes.html" class="nav-link">Padrões</a>
+                </li>
+                <li class="nav-item">
+                    <a href="escolha.html" class="nav-link">Escolha</a>
+                </li>
+                <li class="nav-item">
+                    <a href="arquitetura.html" class="nav-link">Arquitetura Moderna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="referencias.html" class="nav-link">Referências</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="Arquitetura" id="arquitetura">
+            <div class="Arquitetura">
+
+                <h1>
+                    Arquitetura Moderna: Cloud, DevOps, Segurança,
+                    Observabilidade e IA
+                </h1>
+
+                <h2>Cloud Computing</h2>
+
+                <p>
+                    Utilização de recursos computacionais fornecidos por provedores de nuvem.
+                </p>
+
+                <p>Pode incluir:</p>
+
+                <ul>
+                    <li>Máquinas virtuais;</li>
+                    <li>Bancos de dados;</li>
+                    <li>Armazenamento;</li>
+                    <li>Redes;</li>
+                    <li>Funções;</li>
+                    <li>Serviços gerenciados.</li>
+                </ul>
+
+                <p>Exemplos de provedores citados no material:</p>
+
+                <ul>
+                    <li>AWS;</li>
+                    <li>Microsoft Azure;</li>
+                    <li>Google Cloud.</li>
+                </ul>
+
+                <h2>Docker</h2>
+
+                <p>
+                    Permite empacotar:
+                    <br>
+                    Aplicação + Dependências + Configuração → Container
+                </p>
+
+                <p>
+                    Ajuda a manter consistência entre desenvolvimento,
+                    testes e produção.
+                </p>
+
+                <h2>Kubernetes</h2>
+
+                <p>
+                    É uma plataforma para orquestração de containers.
+                </p>
+
+                <p>Pode auxiliar em:</p>
+
+                <ul>
+                    <li>Escalabilidade;</li>
+                    <li>Descoberta de serviços;</li>
+                    <li>Atualizações;</li>
+                    <li>Recuperação de containers;</li>
+                    <li>Gerenciamento de workloads.</li>
+                </ul>
+
+                <h2>Terraform</h2>
+
+                <p>
+                    Utilizado para Infraestrutura como Código (IaC).
+                    <br><br>
+                    Código → Terraform → Infraestrutura
+                </p>
+
+                <p>Permite:</p>
+
+                <ul>
+                    <li>Versionamento;</li>
+                    <li>Automação;</li>
+                    <li>Repetibilidade;</li>
+                    <li>Padronização.</li>
+                </ul>
+
+                <h2>DevOps e CI/CD</h2>
+
+                <p>
+                    DevOps aproxima desenvolvimento e operações.
+                </p>
+
+                <p>
+                    Fluxo:
+                    <br>
+                    Código → Build → Testes → Deploy → Monitoramento → Feedback
+                </p>
+
+                <p>Envolve:</p>
+
+                <ul>
+                    <li>Automação;</li>
+                    <li>CI/CD;</li>
+                    <li>Infraestrutura como código;</li>
+                    <li>Monitoramento;</li>
+                    <li>Colaboração;</li>
+                    <li>Entrega contínua.</li>
+                </ul>
+
+                <h2>CI</h2>
+
+                <p>
+                    <strong>Continuous Integration</strong>
+                    <br>
+                    Integração frequente das alterações de código e sua validação.
+                </p>
+
+                <h2>CD</h2>
+
+                <p>Pode significar:</p>
+
+                <ul>
+                    <li>Continuous Delivery: Entrega Contínua;</li>
+                    <li>Continuous Deployment: Implantação Contínua.</li>
+                </ul>
+
+                <h2>Segurança</h2>
+
+                <p>
+                    A segurança deve ser considerada desde o início do desenvolvimento,
+                    e não somente depois que o sistema está pronto.
+                </p>
+
+                <h3>Autenticação</h3>
+
+                <p>
+                    Responde:
+                    <br>
+                    <strong>"Quem é você?"</strong>
+                </p>
+
+                <p>Pode utilizar:</p>
+
+                <ul>
+                    <li>Usuário e senha;</li>
+                    <li>Tokens;</li>
+                    <li>OAuth;</li>
+                    <li>OpenID Connect;</li>
+                    <li>Certificados;</li>
+                    <li>Biometria.</li>
+                </ul>
+
+                <h3>Autorização</h3>
+
+                <p>
+                    Responde:
+                    <br>
+                    <strong>"O que você pode fazer?"</strong>
+                </p>
+
+                <p>
+                    Exemplo: um administrador pode possuir mais permissões
+                    que um usuário comum.
+                </p>
+
+                <h3>Menor privilégio</h3>
+
+                <p>
+                    Cada usuário ou componente deve possuir somente
+                    as permissões necessárias.
+                </p>
+
+                <h3>Defense in Depth</h3>
+
+                <p>
+                    Utiliza várias camadas de proteção.
+                </p>
+
+                <h3>Zero Trust</h3>
+
+                <p>
+                    Nenhuma entidade deve ser considerada automaticamente confiável.
+                    O acesso deve ser continuamente validado.
+                </p>
+
+                <h3>Criptografia</h3>
+
+                <p>Protege dados:</p>
+
+                <ul>
+                    <li><strong>Em trânsito:</strong> durante a transmissão;</li>
+                    <li><strong>Em repouso:</strong> quando armazenados.</li>
+                </ul>
+
+                <h3>Segredos</h3>
+
+                <p>
+                    Senhas, tokens e chaves privadas não devem ficar diretamente no código.
+                </p>
+
+                <h2>Observabilidade</h2>
+
+                <p>
+                    É a capacidade de compreender o estado interno de um sistema
+                    através dos dados que ele produz.
+                </p>
+
+                <p>
+                    Os três principais sinais são:
+                </p>
+
+                <h3>Logs</h3>
+
+                <p>
+                    Registram acontecimentos.
+                    <br><br>
+                    Exemplo:
+                    <br>
+                    "Usuário autenticado com sucesso."
+                </p>
+
+                <h3>Métricas</h3>
+
+                <p>
+                    Valores mensuráveis.
+                </p>
+
+                <p>Exemplos:</p>
+
+                <ul>
+                    <li>CPU = 72%;</li>
+                    <li>Memória = 68%;</li>
+                    <li>Latência = 120 ms;</li>
+                    <li>10.000 requisições/minuto.</li>
+                </ul>
+
+                <h3>Traces</h3>
+
+                <p>
+                    Acompanham uma requisição através de diferentes componentes.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    Frontend → API → Autenticação → Pedidos → Pagamento → Banco
+                </p>
+
+                <p>
+                    Isso é especialmente importante em sistemas distribuídos.
+                </p>
+
+                <h3>OpenTelemetry</h3>
+
+                <p>
+                    Projeto utilizado para instrumentar aplicações e coletar:
+                </p>
+
+                <ul>
+                    <li>Traces;</li>
+                    <li>Métricas;</li>
+                    <li>Logs.</li>
+                </ul>
+
+                <h2>Inteligência Artificial e Arquitetura</h2>
+
+                <p>
+                    A IA está influenciando tanto o desenvolvimento de software
+                    quanto os próprios sistemas que precisam ser arquitetados.
+                </p>
+
+                <p>A IA generativa pode auxiliar em:</p>
+
+                <ul>
+                    <li>Geração de código;</li>
+                    <li>Análise de código;</li>
+                    <li>Documentação;</li>
+                    <li>Diagramas;</li>
+                    <li>Sugestões arquiteturais;</li>
+                    <li>Identificação de problemas;</li>
+                    <li>Refatoração;</li>
+                    <li>Análise de alternativas.</li>
+                </ul>
+
+                <p>
+                    Fluxo:
+                    <br>
+                    Requisitos → IA → Alternativas → Avaliação humana →
+                    Decisão → Implementação
+                </p>
+
+                <p>A IA pode apresentar:</p>
+
+                <ul>
+                    <li>Informações incorretas;</li>
+                    <li>Alucinações;</li>
+                    <li>Recomendações inadequadas;</li>
+                    <li>Problemas de segurança;</li>
+                    <li>Problemas de privacidade;</li>
+                    <li>Dificuldade de compreender contextos específicos.</li>
+                </ul>
+
+                <p>
+                    Por isso, decisões arquiteturais críticas devem ser avaliadas por profissionais.
+                </p>
+
+                <h2>RAG</h2>
+
+                <p>
+                    <strong>Retrieval-Augmented Generation</strong>
+                    <br>
+                    Permite buscar informações externas antes de gerar uma resposta.
+                </p>
+
+                <p>
+                    Fluxo:
+                    <br>
+                    Pergunta → Busca de documentos → Contexto → LLM → Resposta
+                </p>
+
+                <p>Pode consultar:</p>
+
+                <ul>
+                    <li>Documentos;</li>
+                    <li>Bases internas;</li>
+                    <li>Manuais;</li>
+                    <li>Artigos;</li>
+                    <li>Bases de conhecimento.</li>
+                </ul>
+
+                <h2>Agentes de IA</h2>
+
+                <p>Agentes podem:</p>
+
+                <ul>
+                    <li>Interpretar objetivos;</li>
+                    <li>Planejar;</li>
+                    <li>Utilizar ferramentas;</li>
+                    <li>Consultar APIs;</li>
+                    <li>Executar ações;</li>
+                    <li>Avaliar resultados.</li>
+                </ul>
+
+                <p>
+                    Uma arquitetura pode ser:
+                    <br>
+                    Usuário → Agente → Ferramentas → APIs →
+                    Banco de Dados → LLM
+                </p>
+
+                <p>Isso cria desafios relacionados a:</p>
+
+                <ul>
+                    <li>Segurança;</li>
+                    <li>Controle de acesso;</li>
+                    <li>Observabilidade;</li>
+                    <li>Custos;</li>
+                    <li>Confiabilidade;</li>
+                    <li>Avaliação dos resultados.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">&copy; 2026 - Site de estudos de Ágatha Cristina Marinho da Costa. Todos os direitos
+            reservados. <br><br>
+            Entre em contato comigo no github:<br><br>
+        </p>
+        <a href="https://github.com/agathacris231894-design" id="git">
+            <img src="C:\Users\fabio\Downloads\site_atividade_3\img\github.png" width="100" height="100">
+        </a>
+    </footer>
+
+    </body>
+
+</html>

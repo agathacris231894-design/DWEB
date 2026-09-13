@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura de Software</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Comentário rápido Ctrl + : -->
+    <!-- Responsividade, o site vai se adaptar a diferentes dispositivos -->
+    <meta name="author" content="Ágatha Cristina Marinho da Costa">
+    <meta name="description" content="pesquisa da disciplina dweb">
+    <meta name="keywords" content="arquitetura, Software, desenvolvimento web"">
+    </head>
+
+    <body>
+
+    <header class=" header-1">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="index.html" class="nav-logo active">Arquitetura de Software</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="introducao.html" class="nav-link">Introdução</a>
+                </li>
+                <li class="nav-item">
+                    <a href="objetivos.html" class="nav-link">Objetivos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fundamentos.html" class="nav-link">Fundamentos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="acoplamento.html" class="nav-link">Acoplamento e Coesão</a>
+                </li>
+                <li class="nav-item">
+                    <a href="requisitos.html" class="nav-link">Requisitos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="estilos.html" class="nav-link">Estilos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="padroes.html" class="nav-link">Padrões</a>
+                </li>
+                <li class="nav-item">
+                    <a href="escolha.html" class="nav-link">Escolha</a>
+                </li>
+                <li class="nav-item">
+                    <a href="arquitetura.html" class="nav-link">Arquitetura Moderna</a>
+                </li>
+                <li class="nav-item">
+                    <a href="referencias.html" class="nav-link">Referências</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section class="Estilos" id="estilos">
+            <div class="Estilos">
+
+                <h1>Principais Estilos Arquiteturais</h1>
+
+                <h2>Monolítica</h2>
+                <p>
+                    Toda a aplicação funciona como uma única unidade.
+                </p>
+
+                <p>Vantagens:</p>
+                <ul>
+                    <li>Simplicidade;</li>
+                    <li>Menor complexidade operacional;</li>
+                    <li>Desenvolvimento inicial mais rápido;</li>
+                    <li>Implantação simples.</li>
+                </ul>
+
+                <p>Desvantagens:</p>
+                <ul>
+                    <li>Pode apresentar alto acoplamento;</li>
+                    <li>Escalabilidade menos granular;</li>
+                    <li>Alterações podem exigir novo deploy da aplicação inteira;</li>
+                    <li>Pode ficar difícil de manter.</li>
+                </ul>
+
+                <h2>Modular Monolith</h2>
+                <p>
+                    Continua sendo uma única aplicação, mas organizada em módulos bem definidos.
+                    Busca combinar a simplicidade do monólito com a organização modular.
+                </p>
+
+                <h2>Arquitetura em Camadas</h2>
+                <p>
+                    Divide o sistema em níveis de responsabilidade.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    Apresentação → Aplicação → Domínio → Infraestrutura
+                    <br><br>
+                    Ou:
+                    <br>
+                    Controller → Service → Repository → Banco de Dados
+                </p>
+
+                <p>
+                    Cada camada possui uma responsabilidade específica.
+                </p>
+
+                <h2>MVC</h2>
+                <p>
+                    Significa:
+                </p>
+
+                <ul>
+                    <li><strong>Model:</strong> dados/domínio;</li>
+                    <li><strong>View:</strong> apresentação;</li>
+                    <li><strong>Controller:</strong> recebe requisições e coordena operações.</li>
+                </ul>
+
+                <p>
+                    Fluxo simplificado:
+                    <br>
+                    Usuário → Controller → Model → Banco
+                </p>
+
+                <h2>Arquitetura Hexagonal</h2>
+                <p>
+                    Também chamada de Ports and Adapters.
+                    Busca manter o núcleo da aplicação independente das tecnologias externas.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    API → Porta → Domínio
+                    <br>
+                    Banco → Adaptador → Porta → Domínio
+                </p>
+
+                <h2>Clean Architecture</h2>
+                <p>
+                    Busca manter as regras de negócio independentes de frameworks,
+                    bancos de dados e outras tecnologias externas.
+                </p>
+
+                <p>
+                    Estrutura simplificada:
+                    <br>
+                    Frameworks → Adapters → Casos de uso → Entidades
+                </p>
+
+                <h2>DDD</h2>
+                <p>
+                    Domain-Driven Design coloca o domínio do negócio no centro da modelagem.
+                </p>
+
+                <p>Conceitos importantes:</p>
+                <ul>
+                    <li>Entity;</li>
+                    <li>Value Object;</li>
+                    <li>Aggregate;</li>
+                    <li>Repository;</li>
+                    <li>Domain Service;</li>
+                    <li>Bounded Context;</li>
+                    <li>Ubiquitous Language.</li>
+                </ul>
+
+                <p>
+                    É especialmente útil para sistemas com regras de negócio complexas.
+                </p>
+
+                <h2>Microsserviços</h2>
+                <p>
+                    Divide a aplicação em serviços independentes ou relativamente independentes.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    API Gateway
+                    <br>
+                    → Usuários
+                    <br>
+                    → Pedidos
+                    <br>
+                    → Pagamentos
+                    <br>
+                    → Estoque
+                </p>
+
+                <p>Vantagens:</p>
+                <ul>
+                    <li>Escalabilidade independente;</li>
+                    <li>Deploy independente;</li>
+                    <li>Equipes podem trabalhar de forma independente;</li>
+                    <li>Isolamento de funcionalidades.</li>
+                </ul>
+
+                <p>Desvantagens:</p>
+                <ul>
+                    <li>Maior complexidade;</li>
+                    <li>Comunicação pela rede;</li>
+                    <li>Problemas distribuídos;</li>
+                    <li>Maior necessidade de observabilidade;</li>
+                    <li>Custos de infraestrutura.</li>
+                </ul>
+
+                <p>
+                    <strong>Importante:</strong> microsserviços não devem ser utilizados
+                    apenas porque são uma tendência.
+                </p>
+
+                <h2>Event-Driven</h2>
+                <p>
+                    Utiliza eventos para comunicação entre componentes.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    Pedido criado → Event Bus → Estoque
+                    <br>
+                    Pedido criado → Event Bus → Pagamento
+                    <br>
+                    Pedido criado → Event Bus → E-mail
+                </p>
+
+                <p>Favorece:</p>
+                <ul>
+                    <li>Desacoplamento;</li>
+                    <li>Comunicação assíncrona;</li>
+                    <li>Sistemas distribuídos.</li>
+                </ul>
+
+                <h2>Serverless</h2>
+                <p>
+                    O desenvolvedor utiliza serviços gerenciados pelo provedor de cloud
+                    sem precisar administrar toda a infraestrutura.
+                </p>
+
+                <p>
+                    Exemplo:
+                    <br>
+                    Usuário → API Gateway → Function → Banco
+                </p>
+
+                <p>
+                    As funções podem ser executadas sob demanda.
+                </p>
+
+                <h2>Cloud Native</h2>
+                <p>
+                    É uma abordagem para construir sistemas aproveitando características
+                    da computação em nuvem.
+                </p>
+
+                <p>Pode envolver:</p>
+                <ul>
+                    <li>Containers;</li>
+                    <li>Kubernetes;</li>
+                    <li>Microsserviços;</li>
+                    <li>DevOps;</li>
+                    <li>Automação;</li>
+                    <li>Observabilidade;</li>
+                    <li>Escalabilidade.</li>
+                </ul>
+
+                <p>
+                    Cloud Native não significa simplesmente colocar um sistema
+                    em um servidor na nuvem.
+                </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">&copy; 2026 - Site de estudos de Ágatha Cristina Marinho da Costa. Todos os direitos
+            reservados. <br><br>
+            Entre em contato comigo no github:<br><br>
+        </p>
+        <a href="https://github.com/agathacris231894-design" id="git">
+            <img src="C:\Users\fabio\Downloads\site_atividade_3\img\github.png" width="100" height="100">
+        </a>
+    </footer>
+
+    </body>
+
+</html>
