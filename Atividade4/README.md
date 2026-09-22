@@ -167,14 +167,11 @@ Essa sequência representa a proposta principal do GENOMA: mostrar como informa�
 
 ---
 
-## 👥 Autores
+## 👥 Autora
 
 Projeto desenvolvido por:
 
 * **Ágatha Cristina Marinho da Costa**
-* **Júlia Ribeiro**
-* **Guilherme Lao**
-* **Alexandra Oliveira**
 
 ---
 
