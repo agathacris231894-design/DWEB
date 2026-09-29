@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    font-family: 'Russo One', Arial, Helvetica, sans-serif;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    font-size: x-large;
+}
+
+h2::before{
+    background-color: rgb(62, 166, 65);
+    content: "Verde. ";
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1367px) {
+h2::before{
+    background-color: rgb(208, 229, 49);
+    content: "Amarelo. ";
+}
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1081px) {
+h2::before{
+    background-color: rgb(43, 28, 128);
+    content: "Azul. ";
+}
+}
+
+@media screen and (max-width: 1080px) and (min-width: 1025px) {
+h2::before{
+    background-color: rgb(144, 19, 19);
+    content: "Vermelho. ";
+}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+h2::before{
+    background-color: rgb(169, 38, 129);
+    content: "Pink. ";
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 421px) {
+h2::before{
+    background-color: rgb(202, 104, 29);
+    content: "Laranja. ";
+}
+}
+
+@media screen and (max-width: 420px){
+h2::before{
+    background-color: rgb(0, 0, 0);
+    content: "Preto. ";
+    color: white;
+}
+}
