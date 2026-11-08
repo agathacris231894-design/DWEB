@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Opinião</title>
+    <script src="pesquisa.js" defer></script>
+    <link rel="stylesheet" href="pesquisa.css">
+</head>
+
+<body>
+
+    <h1>PESQUISA DE OPINIÃO</h1>
+
+    <form id="formulario">
+
+        <label for="idade">Idade:</label>
+        <br><br>
+        <input type="number" id="idade" name="idade">
+
+        <br><br>
+
+        <label>Sexo:</label>
+        <br><br>
+
+        <input type="radio" id="masculino" name="sexo" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <br>
+
+        <input type="radio" id="feminino" name="sexo" value="Feminino">
+        <label for="feminino">Feminino</label>
+
+        <br>
+
+        <input type="radio" id="outros" name="sexo" value="Outros">
+        <label for="outros">Outros</label>
+
+        <br><br>
+
+        <label>Opinião:</label>
+        <br><br>
+
+        <input type="radio" id="otimo" name="opiniao" value="4">
+        <label for="otimo">Ótimo</label>
+
+        <br>
+
+        <input type="radio" id="bom" name="opiniao" value="3">
+        <label for="bom">Bom</label>
+
+        <br>
+
+        <input type="radio" id="regular" name="opiniao" value="2">
+        <label for="regular">Regular</label>
+
+        <br>
+
+        <input type="radio" id="pessimo" name="opiniao" value="1">
+        <label for="pessimo">Péssimo</label>
+
+        <br><br>
+
+        <button type="button" id="enviar">Enviar</button>
+
+        <br><br>
+
+        <button type="button" id="finalizar">Finalizar Pesquisa</button>
+
+    </form>
+
+    <p id="contador">Respostas registradas: 0 de 3</p>
+
+    <!-- Os resultados serão inseridos aqui pelo JavaScript -->
+    <div id="resultados"></div>
+
+</body>
+</html>
